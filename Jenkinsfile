@@ -10,7 +10,7 @@ pipeline {
                     reportDir:'html_cppcheck/',
                     reportFiles:'index.html',
                     keepAll:false,
-                    alwaysLinToLastBuild:false,
+                    alwaysLinkToLastBuild:false,
                     allowMissing:false 
                 ]) 
             }
