@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Static analysis') {
             steps {
-                sh 'cppcheck --xml --xml-version=2 . 2> cppcheck.xml'
+                sh 'cppcheck --xml --xml-version=2 /var/lib/jenkins/workspace/Sorted_Great_Columns 2> cppcheck.xml'
             }
         }
         stage('Build') { 
