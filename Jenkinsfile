@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     stages {
-        stage('Static analysis) {
+        stage('Static analysis') {
             steps {
                 sh 'cppcheck --xml --xml-version=2 2> cppcheck.xml'
             }
