@@ -7,7 +7,12 @@ pipeline {
                 sh 'cppcheck-htmlreport --file=cppcheck.xml --report-dir=html_cppcheck --source-dir=.'
                 publishHTML ([
                     reportName:'static_analysis',
-                    reportDir:'html_cppcheck/' ]) 
+                    reportDir:'html_cppcheck/',
+                    reportFiles:'index.html',
+                    keepAll:false,
+                    alwaysLinToLastBuild:false,
+                    allowMissing:false 
+                ]) 
             }
         }
         stage('Build') { 
