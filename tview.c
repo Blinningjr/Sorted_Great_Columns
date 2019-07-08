@@ -17,13 +17,6 @@ void printchararr(char *chars){
     printf("%s\n",chars);
 }
 
-void printintarr(int *num, int size){
-    for (int i = 0; i < size; i++){
-        printf("%d,", num[i]);
-    }
-    printf("\n");
-}
-
 void printstock(int *num, int size, int largestnum){
     clearterminal();
     int hight = largestnum;
