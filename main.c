@@ -9,7 +9,7 @@ char algorithm = 'n';
 int largest;
 
 int find_largestnum(int *num, int size) {
-  int largest = num[0];
+  largest = num[0];
   for (int i = 1; i < size; i++) {
     if (num[i] > largest) {
       largest = num[i];
